@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<groups>
+		<run>
+			<exclude name="medium"></exclude>
+		</run>
+	</groups>
+  <test thread-count="5" name="SearchReturnAction">
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="com.ibm.groceries.ReturnAction"/>
+    </classes>
+  </test> <!-- SearchReturnAction -->
+</suite> <!-- Suite -->
